@@ -50,7 +50,6 @@ export default function TarotCard({
       y.value = offset.value.y + event.translationY;
     })
     .onEnd(event => {
-      console.log({end: x.value});
       if (Math.abs(x.value) < wWidth / 2) {
         x.value = withSpring(event.translationX * 2);
         y.value = y.value;
